@@ -7,6 +7,12 @@ package pattern.design;
  **/
 public abstract class CashSuper {
 
-    //现金收费的抽象方法 收取现金 参数为原价 返回当前价
+    /**
+     * method
+     *
+     * @param money
+     * @return: double
+     * @time: 2020/6/7 19:31
+     */
     public abstract double acceptCase(double money);
 }

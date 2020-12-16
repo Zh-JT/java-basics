@@ -1,7 +1,6 @@
-package pattern;
-
-
 import pattern.design.CashContext;
+
+import java.util.concurrent.TimeUnit;
 
 /**
  * @description:
@@ -21,6 +20,7 @@ public class PatternApp {
             ++a;
         }
         System.out.println(a);
+        System.out.println( 1 << 30);
     }
     public static void Normal(int number, int price) {
         CashContext ccNormal = new CashContext("正常收费");
@@ -38,6 +38,7 @@ public class PatternApp {
         CashContext ccReturn = new CashContext("满1000减100");
         double result = ccReturn.getResult(number*price);
         System.out.println("打折收费:商品单价为：" + price + "元，商品数量为：" + number + "件，应付款：" + result + "元。");
+        System.out.println(TimeUnit.DAYS.toMicros(356 * 6));
     }
 
 }

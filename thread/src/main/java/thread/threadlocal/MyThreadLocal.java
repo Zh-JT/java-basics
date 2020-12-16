@@ -1,7 +1,7 @@
 package thread.threadlocal;
 
 /**
- * @description: threadLocal 内部两个变量ThreadLocals inheritableThreadLocals 二者都是ThreadLocal内部类
+ * @description: ThreadLocal 内部两个变量threadLocals inheritableThreadLocals 二者都是ThreadLocal内部类对象
  *                  ThreadLocalMap类型的变量 只用在调用ThreadLocal的set或者get方法才会创建他们
  *                  set：ThreadLocals的变量都是存放在threadLocals key值就是当前调用线程的名字Thread.currentThread() value就是传进去的参数
  *                        会判断当前线程 getMap(t)如果不为空直接set值 如果为空createMap（t,value）

@@ -25,7 +25,12 @@ public class CashContext {
         }
     }
 
-    //根据不同的收费策略 获得收费结果
+    /**
+     * @description: 根据不同的收费策略 获得收费结果
+     * @params [money]
+     * @return: double
+     * @time: 2020/6/7 19:04
+     */
     public double getResult(double money){
         return cs.acceptCase(money);
     }

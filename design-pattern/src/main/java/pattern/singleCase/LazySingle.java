@@ -1,13 +1,13 @@
 package pattern.singleCase;
 
 /**
- * @description: 懒汉模式(使用的是双重锁)
+ * @description: 懒汉模式(使用的是双重锁)DCL
  * @author: Mr.Zh
  * @create: 2020-05-24 13:25
  **/
 public class  LazySingle{
 
-    private static LazySingle sInstance = null;
+    private volatile static LazySingle sInstance = null;
 
     private LazySingle(){}
 
@@ -21,4 +21,6 @@ public class  LazySingle{
         }
         return sInstance;
     }
+
+
 }

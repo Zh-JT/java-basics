@@ -11,6 +11,7 @@ public class CashRebate extends CashSuper {
     public CashRebate(String moneyRebate){
             this.moneyRebate=Double.valueOf(moneyRebate);
     }
+    @Override
     public double acceptCase(double money) {
         return money*moneyRebate;
     }
